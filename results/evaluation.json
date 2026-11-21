@@ -1,0 +1,1409 @@
+{
+  "headline": {
+    "cases": 40,
+    "endemic_rate_none": 0.525,
+    "endemic_rate_ri_guided": 0.275,
+    "oracle_cases": 20,
+    "per_topology": {
+      "dual_community": {
+        "cases": 10,
+        "mean_adoption_degree": 0.35416666666666663,
+        "mean_adoption_none": 0.6,
+        "mean_adoption_ri": 0.35833333333333334
+      },
+      "fully_connected": {
+        "cases": 10,
+        "mean_adoption_degree": 0.8458333333333334,
+        "mean_adoption_none": 1.0,
+        "mean_adoption_ri": 0.8458333333333334
+      },
+      "scale_free": {
+        "cases": 10,
+        "mean_adoption_degree": 0.19166666666666668,
+        "mean_adoption_none": 0.36666666666666664,
+        "mean_adoption_ri": 0.12916666666666665
+      },
+      "tree": {
+        "cases": 10,
+        "mean_adoption_degree": 0.06666666666666667,
+        "mean_adoption_none": 0.09166666666666666,
+        "mean_adoption_ri": 0.06666666666666667
+      }
+    },
+    "regret": {
+      "degree_greedy": 0.045833333333333344,
+      "random": 0.07916666666666668,
+      "ri_edges": 0.15416666666666667,
+      "ri_guided": 0.03333333333333334
+    },
+    "ri_matches_oracle_fraction": 0.6,
+    "ri_regret_le_degree_fraction": 0.95,
+    "strategies": {
+      "degree_greedy": {
+        "mean_adoption": 0.36458333333333337,
+        "mean_reduction_per_node": 0.06041666666666666
+      },
+      "none": {
+        "mean_adoption": 0.5145833333333333
+      },
+      "oracle": {
+        "mean_adoption": 0.29583333333333334,
+        "mean_reduction_per_node": 0.08541666666666667
+      },
+      "random": {
+        "mean_adoption": 0.40173611111111107,
+        "mean_reduction_per_node": 0.04525462962962963
+      },
+      "ri_edges": {
+        "mean_adoption": 0.4395833333333333,
+        "mean_reduction_per_node": 0.02638888888888889
+      },
+      "ri_guided": {
+        "mean_adoption": 0.35,
+        "mean_reduction_per_node": 0.06631944444444444
+      }
+    }
+  },
+  "rows": [
+    {
+      "adoption": {
+        "degree_greedy": 0.8333333333333334,
+        "none": 1.0,
+        "oracle": 0.8333333333333334,
+        "random": 0.8333333333333334,
+        "ri_edges": 1.0,
+        "ri_guided": 0.8333333333333334
+      },
+      "case_id": "case-01",
+      "endemic_none": true,
+      "endemic_ri_guided": true,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 1]",
+        "random": "random: mute [5, 6]",
+        "ri_edges": "ri_edges: cut [(1, 11), (4, 11)]",
+        "ri_guided": "ri_guided: mute [1, 3]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.08333333333333331,
+        "oracle": 0.08333333333333331,
+        "random": 0.08333333333333331,
+        "ri_edges": 0.0,
+        "ri_guided": 0.08333333333333331
+      },
+      "regret": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.16666666666666663,
+        "ri_guided": 0.0
+      },
+      "seed_node": 11,
+      "topology": "fully_connected"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.8333333333333334,
+        "none": 1.0,
+        "oracle": 0.75,
+        "random": 0.8333333333333334,
+        "ri_edges": 1.0,
+        "ri_guided": 0.8333333333333334
+      },
+      "case_id": "case-02",
+      "endemic_none": true,
+      "endemic_ri_guided": true,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [3, 9]",
+        "random": "random: mute [1, 7]",
+        "ri_edges": "ri_edges: cut [(0, 1), (0, 7)]",
+        "ri_guided": "ri_guided: mute [0, 4]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.08333333333333331,
+        "oracle": 0.125,
+        "random": 0.08333333333333331,
+        "ri_edges": 0.0,
+        "ri_guided": 0.08333333333333331
+      },
+      "regret": {
+        "degree_greedy": 0.08333333333333337,
+        "random": 0.08333333333333337,
+        "ri_edges": 0.25,
+        "ri_guided": 0.08333333333333337
+      },
+      "seed_node": 10,
+      "topology": "fully_connected"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.75,
+        "none": 1.0,
+        "oracle": 0.75,
+        "random": 0.8055555555555557,
+        "ri_edges": 1.0,
+        "ri_guided": 0.8333333333333334
+      },
+      "case_id": "case-03",
+      "endemic_none": true,
+      "endemic_ri_guided": true,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 1]",
+        "random": "random: mute [0, 11]",
+        "ri_edges": "ri_edges: cut [(1, 9), (7, 9)]",
+        "ri_guided": "ri_guided: mute [1, 5]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.125,
+        "oracle": 0.125,
+        "random": 0.09722222222222215,
+        "ri_edges": 0.0,
+        "ri_guided": 0.08333333333333331
+      },
+      "regret": {
+        "degree_greedy": 0.0,
+        "random": 0.05555555555555569,
+        "ri_edges": 0.25,
+        "ri_guided": 0.08333333333333337
+      },
+      "seed_node": 9,
+      "topology": "fully_connected"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.8333333333333334,
+        "none": 1.0,
+        "oracle": 0.6666666666666666,
+        "random": 0.7777777777777778,
+        "ri_edges": 1.0,
+        "ri_guided": 0.75
+      },
+      "case_id": "case-04",
+      "endemic_none": true,
+      "endemic_ri_guided": true,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 4]",
+        "random": "random: mute [3, 9]",
+        "ri_edges": "ri_edges: cut [(6, 8), (8, 9)]",
+        "ri_guided": "ri_guided: mute [3, 5]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.08333333333333331,
+        "oracle": 0.16666666666666669,
+        "random": 0.1111111111111111,
+        "ri_edges": 0.0,
+        "ri_guided": 0.125
+      },
+      "regret": {
+        "degree_greedy": 0.16666666666666674,
+        "random": 0.11111111111111116,
+        "ri_edges": 0.33333333333333337,
+        "ri_guided": 0.08333333333333337
+      },
+      "seed_node": 8,
+      "topology": "fully_connected"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.8333333333333334,
+        "none": 1.0,
+        "oracle": 0.8333333333333334,
+        "random": 0.8333333333333334,
+        "ri_edges": 1.0,
+        "ri_guided": 0.8333333333333334
+      },
+      "case_id": "case-05",
+      "endemic_none": true,
+      "endemic_ri_guided": true,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 1]",
+        "random": "random: mute [0, 3]",
+        "ri_edges": "ri_edges: cut [(0, 4), (0, 6)]",
+        "ri_guided": "ri_guided: mute [1, 8]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.08333333333333331,
+        "oracle": 0.08333333333333331,
+        "random": 0.08333333333333331,
+        "ri_edges": 0.0,
+        "ri_guided": 0.08333333333333331
+      },
+      "regret": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.16666666666666663,
+        "ri_guided": 0.0
+      },
+      "seed_node": 7,
+      "topology": "fully_connected"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.875,
+        "none": 1.0,
+        "random": 0.875,
+        "ri_edges": 1.0,
+        "ri_guided": 0.875
+      },
+      "case_id": "case-06",
+      "endemic_none": true,
+      "endemic_ri_guided": true,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1, 2]",
+        "none": "none: no intervention",
+        "random": "random: mute [1, 15, 20]",
+        "ri_edges": "ri_edges: cut [(1, 2), (2, 3), (11, 20)]",
+        "ri_guided": "ri_guided: mute [1, 2, 3]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.041666666666666664,
+        "random": 0.041666666666666664,
+        "ri_edges": 0.0,
+        "ri_guided": 0.041666666666666664
+      },
+      "seed_node": 11,
+      "topology": "fully_connected"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.875,
+        "none": 1.0,
+        "random": 0.875,
+        "ri_edges": 1.0,
+        "ri_guided": 0.875
+      },
+      "case_id": "case-07",
+      "endemic_none": true,
+      "endemic_ri_guided": true,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1, 2]",
+        "none": "none: no intervention",
+        "random": "random: mute [8, 19, 21]",
+        "ri_edges": "ri_edges: cut [(0, 22), (4, 22), (5, 22)]",
+        "ri_guided": "ri_guided: mute [1, 4, 5]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.041666666666666664,
+        "random": 0.041666666666666664,
+        "ri_edges": 0.0,
+        "ri_guided": 0.041666666666666664
+      },
+      "seed_node": 22,
+      "topology": "fully_connected"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.875,
+        "none": 1.0,
+        "random": 0.875,
+        "ri_edges": 1.0,
+        "ri_guided": 0.875
+      },
+      "case_id": "case-08",
+      "endemic_none": true,
+      "endemic_ri_guided": true,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1, 2]",
+        "none": "none: no intervention",
+        "random": "random: mute [5, 11, 18]",
+        "ri_edges": "ri_edges: cut [(3, 9), (4, 9), (9, 12)]",
+        "ri_guided": "ri_guided: mute [4, 5, 12]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.041666666666666664,
+        "random": 0.041666666666666664,
+        "ri_edges": 0.0,
+        "ri_guided": 0.041666666666666664
+      },
+      "seed_node": 9,
+      "topology": "fully_connected"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.875,
+        "none": 1.0,
+        "random": 0.875,
+        "ri_edges": 1.0,
+        "ri_guided": 0.875
+      },
+      "case_id": "case-09",
+      "endemic_none": true,
+      "endemic_ri_guided": true,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1, 2]",
+        "none": "none: no intervention",
+        "random": "random: mute [4, 6, 16]",
+        "ri_edges": "ri_edges: cut [(1, 8), (1, 22), (1, 23)]",
+        "ri_guided": "ri_guided: mute [1, 5, 6]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.041666666666666664,
+        "random": 0.041666666666666664,
+        "ri_edges": 0.0,
+        "ri_guided": 0.041666666666666664
+      },
+      "seed_node": 20,
+      "topology": "fully_connected"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.875,
+        "none": 1.0,
+        "random": 0.875,
+        "ri_edges": 1.0,
+        "ri_guided": 0.875
+      },
+      "case_id": "case-10",
+      "endemic_none": true,
+      "endemic_ri_guided": true,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1, 2]",
+        "none": "none: no intervention",
+        "random": "random: mute [3, 9, 15]",
+        "ri_edges": "ri_edges: cut [(1, 4), (7, 13), (7, 19)]",
+        "ri_guided": "ri_guided: mute [1, 3, 5]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.041666666666666664,
+        "random": 0.041666666666666664,
+        "ri_edges": 0.0,
+        "ri_guided": 0.041666666666666664
+      },
+      "seed_node": 7,
+      "topology": "fully_connected"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.08333333333333333,
+        "none": 0.08333333333333333,
+        "oracle": 0.08333333333333333,
+        "random": 0.08333333333333333,
+        "ri_edges": 0.08333333333333333,
+        "ri_guided": 0.08333333333333333
+      },
+      "case_id": "case-11",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [1, 4]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 1]",
+        "random": "random: mute [7, 9]",
+        "ri_edges": "ri_edges: cut [(1, 3), (1, 6)]",
+        "ri_guided": "ri_guided: mute [1, 4]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "oracle": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "regret": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 11,
+      "topology": "tree"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.08333333333333333,
+        "none": 0.25,
+        "oracle": 0.08333333333333333,
+        "random": 0.19444444444444442,
+        "ri_edges": 0.08333333333333333,
+        "ri_guided": 0.08333333333333333
+      },
+      "case_id": "case-12",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [1, 7]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 7]",
+        "random": "random: mute [5, 11]",
+        "ri_edges": "ri_edges: cut [(3, 7), (7, 10)]",
+        "ri_guided": "ri_guided: mute [1, 7]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.08333333333333334,
+        "oracle": 0.08333333333333334,
+        "random": 0.02777777777777779,
+        "ri_edges": 0.08333333333333334,
+        "ri_guided": 0.08333333333333334
+      },
+      "regret": {
+        "degree_greedy": 0.0,
+        "random": 0.11111111111111109,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 10,
+      "topology": "tree"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.08333333333333333,
+        "none": 0.08333333333333333,
+        "oracle": 0.08333333333333333,
+        "random": 0.08333333333333333,
+        "ri_edges": 0.08333333333333333,
+        "ri_guided": 0.08333333333333333
+      },
+      "case_id": "case-13",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 4]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 1]",
+        "random": "random: mute [5, 10]",
+        "ri_edges": "ri_edges: cut [(4, 6), (8, 9)]",
+        "ri_guided": "ri_guided: mute [0, 4]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "oracle": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "regret": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 9,
+      "topology": "tree"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.08333333333333333,
+        "none": 0.08333333333333333,
+        "oracle": 0.08333333333333333,
+        "random": 0.08333333333333333,
+        "ri_edges": 0.08333333333333333,
+        "ri_guided": 0.08333333333333333
+      },
+      "case_id": "case-14",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 1]",
+        "random": "random: mute [10, 11]",
+        "ri_edges": "ri_edges: cut [(1, 2), (2, 8)]",
+        "ri_guided": "ri_guided: mute [0, 2]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "oracle": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "regret": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 8,
+      "topology": "tree"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.08333333333333333,
+        "none": 0.08333333333333333,
+        "oracle": 0.08333333333333333,
+        "random": 0.08333333333333333,
+        "ri_edges": 0.08333333333333333,
+        "ri_guided": 0.08333333333333333
+      },
+      "case_id": "case-15",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [1, 2]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 1]",
+        "random": "random: mute [1, 3]",
+        "ri_edges": "ri_edges: cut [(1, 3), (3, 7)]",
+        "ri_guided": "ri_guided: mute [1, 3]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "oracle": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "regret": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 7,
+      "topology": "tree"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.08333333333333333,
+        "none": 0.16666666666666666,
+        "random": 0.16666666666666666,
+        "ri_edges": 0.041666666666666664,
+        "ri_guided": 0.08333333333333333
+      },
+      "case_id": "case-16",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [1, 3, 4]",
+        "none": "none: no intervention",
+        "random": "random: mute [7, 8, 10]",
+        "ri_edges": "ri_edges: cut [(1, 3), (3, 11), (11, 21)]",
+        "ri_guided": "ri_guided: mute [1, 3, 4]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.027777777777777776,
+        "random": 0.0,
+        "ri_edges": 0.041666666666666664,
+        "ri_guided": 0.027777777777777776
+      },
+      "seed_node": 11,
+      "topology": "tree"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.041666666666666664,
+        "none": 0.041666666666666664,
+        "random": 0.041666666666666664,
+        "ri_edges": 0.041666666666666664,
+        "ri_guided": 0.041666666666666664
+      },
+      "case_id": "case-17",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1, 7]",
+        "none": "none: no intervention",
+        "random": "random: mute [8, 13, 19]",
+        "ri_edges": "ri_edges: cut [(0, 1), (1, 3), (15, 22)]",
+        "ri_guided": "ri_guided: mute [0, 1, 7]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 22,
+      "topology": "tree"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.041666666666666664,
+        "none": 0.041666666666666664,
+        "random": 0.041666666666666664,
+        "ri_edges": 0.041666666666666664,
+        "ri_guided": 0.041666666666666664
+      },
+      "case_id": "case-18",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 2, 4]",
+        "none": "none: no intervention",
+        "random": "random: mute [14, 15, 17]",
+        "ri_edges": "ri_edges: cut [(8, 9), (8, 17), (9, 15)]",
+        "ri_guided": "ri_guided: mute [2, 4, 8]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 9,
+      "topology": "tree"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.041666666666666664,
+        "none": 0.041666666666666664,
+        "random": 0.041666666666666664,
+        "ri_edges": 0.041666666666666664,
+        "ri_guided": 0.041666666666666664
+      },
+      "case_id": "case-19",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1, 2]",
+        "none": "none: no intervention",
+        "random": "random: mute [1, 7, 16]",
+        "ri_edges": "ri_edges: cut [(4, 5), (5, 18), (5, 20)]",
+        "ri_guided": "ri_guided: mute [0, 2, 5]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 20,
+      "topology": "tree"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.041666666666666664,
+        "none": 0.041666666666666664,
+        "random": 0.041666666666666664,
+        "ri_edges": 0.041666666666666664,
+        "ri_guided": 0.041666666666666664
+      },
+      "case_id": "case-20",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1, 3]",
+        "none": "none: no intervention",
+        "random": "random: mute [11, 16, 18]",
+        "ri_edges": "ri_edges: cut [(3, 7), (3, 17), (3, 22)]",
+        "ri_guided": "ri_guided: mute [0, 1, 3]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 7,
+      "topology": "tree"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.25,
+        "none": 0.25,
+        "oracle": 0.25,
+        "random": 0.25,
+        "ri_edges": 0.25,
+        "ri_guided": 0.25
+      },
+      "case_id": "case-21",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [4, 7]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 1]",
+        "random": "random: mute [8, 10]",
+        "ri_edges": "ri_edges: cut [(7, 8), (8, 11)]",
+        "ri_guided": "ri_guided: mute [6, 7]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "oracle": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "regret": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 11,
+      "topology": "dual_community"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.4166666666666667,
+        "none": 0.5833333333333334,
+        "oracle": 0.3333333333333333,
+        "random": 0.6666666666666666,
+        "ri_edges": 0.5833333333333334,
+        "ri_guided": 0.4166666666666667
+      },
+      "case_id": "case-22",
+      "endemic_none": true,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [3, 9]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [9, 11]",
+        "random": "random: mute [2, 8]",
+        "ri_edges": "ri_edges: cut [(6, 7), (10, 11)]",
+        "ri_guided": "ri_guided: mute [3, 6]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.08333333333333334,
+        "oracle": 0.12500000000000003,
+        "random": -0.04166666666666663,
+        "ri_edges": 0.0,
+        "ri_guided": 0.08333333333333334
+      },
+      "regret": {
+        "degree_greedy": 0.08333333333333337,
+        "random": 0.3333333333333333,
+        "ri_edges": 0.25000000000000006,
+        "ri_guided": 0.08333333333333337
+      },
+      "seed_node": 10,
+      "topology": "dual_community"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.08333333333333333,
+        "none": 0.5,
+        "oracle": 0.08333333333333333,
+        "random": 0.2222222222222222,
+        "ri_edges": 0.5,
+        "ri_guided": 0.08333333333333333
+      },
+      "case_id": "case-23",
+      "endemic_none": true,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 7]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 6]",
+        "random": "random: mute [2, 5]",
+        "ri_edges": "ri_edges: cut [(0, 7), (9, 10)]",
+        "ri_guided": "ri_guided: mute [0, 7]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.20833333333333334,
+        "oracle": 0.20833333333333334,
+        "random": 0.1388888888888889,
+        "ri_edges": 0.0,
+        "ri_guided": 0.20833333333333334
+      },
+      "regret": {
+        "degree_greedy": 0.0,
+        "random": 0.1388888888888889,
+        "ri_edges": 0.4166666666666667,
+        "ri_guided": 0.0
+      },
+      "seed_node": 9,
+      "topology": "dual_community"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.25,
+        "none": 0.25,
+        "oracle": 0.25,
+        "random": 0.25,
+        "ri_edges": 0.25,
+        "ri_guided": 0.25
+      },
+      "case_id": "case-24",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 9]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 1]",
+        "random": "random: mute [3, 4]",
+        "ri_edges": "ri_edges: cut [(6, 8), (7, 10)]",
+        "ri_guided": "ri_guided: mute [0, 10]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "oracle": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "regret": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 8,
+      "topology": "dual_community"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.4166666666666667,
+        "none": 0.5,
+        "oracle": 0.25,
+        "random": 0.3333333333333333,
+        "ri_edges": 0.6666666666666666,
+        "ri_guided": 0.25
+      },
+      "case_id": "case-25",
+      "endemic_none": true,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [1, 8]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [6, 8]",
+        "random": "random: mute [9, 10]",
+        "ri_edges": "ri_edges: cut [(7, 8), (8, 9)]",
+        "ri_guided": "ri_guided: mute [8, 9]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.04166666666666666,
+        "oracle": 0.125,
+        "random": 0.08333333333333334,
+        "ri_edges": -0.08333333333333331,
+        "ri_guided": 0.125
+      },
+      "regret": {
+        "degree_greedy": 0.16666666666666669,
+        "random": 0.08333333333333331,
+        "ri_edges": 0.41666666666666663,
+        "ri_guided": 0.0
+      },
+      "seed_node": 7,
+      "topology": "dual_community"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.375,
+        "none": 0.5,
+        "random": 0.3611111111111111,
+        "ri_edges": 0.4583333333333333,
+        "ri_guided": 0.375
+      },
+      "case_id": "case-26",
+      "endemic_none": true,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [8, 9, 15]",
+        "none": "none: no intervention",
+        "random": "random: mute [1, 3, 21]",
+        "ri_edges": "ri_edges: cut [(0, 4), (7, 11), (9, 15)]",
+        "ri_guided": "ri_guided: mute [4, 8, 15]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.041666666666666664,
+        "random": 0.0462962962962963,
+        "ri_edges": 0.013888888888888895,
+        "ri_guided": 0.041666666666666664
+      },
+      "seed_node": 11,
+      "topology": "dual_community"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.4583333333333333,
+        "none": 1.0,
+        "random": 0.625,
+        "ri_edges": 1.0,
+        "ri_guided": 0.7916666666666666
+      },
+      "case_id": "case-27",
+      "endemic_none": true,
+      "endemic_ri_guided": true,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [6, 7, 18]",
+        "none": "none: no intervention",
+        "random": "random: mute [1, 7, 23]",
+        "ri_edges": "ri_edges: cut [(12, 22), (16, 22), (19, 22)]",
+        "ri_guided": "ri_guided: mute [0, 6, 13]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.18055555555555558,
+        "random": 0.125,
+        "ri_edges": 0.0,
+        "ri_guided": 0.06944444444444446
+      },
+      "seed_node": 22,
+      "topology": "dual_community"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.4166666666666667,
+        "none": 0.9583333333333334,
+        "random": 0.5277777777777778,
+        "ri_edges": 0.4583333333333333,
+        "ri_guided": 0.3333333333333333
+      },
+      "case_id": "case-28",
+      "endemic_none": true,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 11, 15]",
+        "none": "none: no intervention",
+        "random": "random: mute [0, 7, 22]",
+        "ri_edges": "ri_edges: cut [(1, 2), (3, 9), (6, 9)]",
+        "ri_guided": "ri_guided: mute [2, 4, 11]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.18055555555555558,
+        "random": 0.14351851851851852,
+        "ri_edges": 0.16666666666666666,
+        "ri_guided": 0.20833333333333334
+      },
+      "seed_node": 9,
+      "topology": "dual_community"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.4583333333333333,
+        "none": 0.9583333333333334,
+        "random": 0.6805555555555555,
+        "ri_edges": 0.5,
+        "ri_guided": 0.4166666666666667
+      },
+      "case_id": "case-29",
+      "endemic_none": true,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1, 18]",
+        "none": "none: no intervention",
+        "random": "random: mute [5, 7, 10]",
+        "ri_edges": "ri_edges: cut [(0, 4), (1, 18), (14, 20)]",
+        "ri_guided": "ri_guided: mute [1, 15, 23]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.16666666666666666,
+        "random": 0.09259259259259263,
+        "ri_edges": 0.1527777777777778,
+        "ri_guided": 0.18055555555555558
+      },
+      "seed_node": 20,
+      "topology": "dual_community"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.4166666666666667,
+        "none": 0.5,
+        "random": 0.4305555555555556,
+        "ri_edges": 0.5,
+        "ri_guided": 0.4166666666666667
+      },
+      "case_id": "case-30",
+      "endemic_none": true,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [2, 4, 16]",
+        "none": "none: no intervention",
+        "random": "random: mute [8, 20, 21]",
+        "ri_edges": "ri_edges: cut [(4, 11), (6, 7), (16, 20)]",
+        "ri_guided": "ri_guided: mute [4, 9, 16]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.027777777777777773,
+        "random": 0.02314814814814814,
+        "ri_edges": 0.0,
+        "ri_guided": 0.027777777777777773
+      },
+      "seed_node": 7,
+      "topology": "dual_community"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.16666666666666666,
+        "none": 0.16666666666666666,
+        "oracle": 0.08333333333333333,
+        "random": 0.2222222222222222,
+        "ri_edges": 0.5833333333333334,
+        "ri_guided": 0.16666666666666666
+      },
+      "case_id": "case-31",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [2, 5]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [1, 6]",
+        "random": "random: mute [2, 9]",
+        "ri_edges": "ri_edges: cut [(6, 9), (6, 11)]",
+        "ri_guided": "ri_guided: mute [2, 5]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "oracle": 0.041666666666666664,
+        "random": -0.027777777777777776,
+        "ri_edges": -0.20833333333333337,
+        "ri_guided": 0.0
+      },
+      "regret": {
+        "degree_greedy": 0.08333333333333333,
+        "random": 0.1388888888888889,
+        "ri_edges": 0.5,
+        "ri_guided": 0.08333333333333333
+      },
+      "seed_node": 11,
+      "topology": "scale_free"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.16666666666666666,
+        "none": 0.16666666666666666,
+        "oracle": 0.08333333333333333,
+        "random": 0.16666666666666666,
+        "ri_edges": 0.08333333333333333,
+        "ri_guided": 0.16666666666666666
+      },
+      "case_id": "case-32",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [1, 3]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 2]",
+        "random": "random: mute [4, 11]",
+        "ri_edges": "ri_edges: cut [(1, 3), (2, 10)]",
+        "ri_guided": "ri_guided: mute [1, 3]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "oracle": 0.041666666666666664,
+        "random": 0.0,
+        "ri_edges": 0.041666666666666664,
+        "ri_guided": 0.0
+      },
+      "regret": {
+        "degree_greedy": 0.08333333333333333,
+        "random": 0.08333333333333333,
+        "ri_edges": 0.0,
+        "ri_guided": 0.08333333333333333
+      },
+      "seed_node": 10,
+      "topology": "scale_free"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.16666666666666666,
+        "none": 0.16666666666666666,
+        "oracle": 0.16666666666666666,
+        "random": 0.16666666666666666,
+        "ri_edges": 0.16666666666666666,
+        "ri_guided": 0.16666666666666666
+      },
+      "case_id": "case-33",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [1, 3]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 1]",
+        "random": "random: mute [0, 10]",
+        "ri_edges": "ri_edges: cut [(0, 4), (9, 11)]",
+        "ri_guided": "ri_guided: mute [4, 7]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "oracle": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "regret": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 9,
+      "topology": "scale_free"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.16666666666666666,
+        "none": 0.9166666666666666,
+        "oracle": 0.08333333333333333,
+        "random": 0.3333333333333333,
+        "ri_edges": 0.25,
+        "ri_guided": 0.16666666666666666
+      },
+      "case_id": "case-34",
+      "endemic_none": true,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 3]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 5]",
+        "random": "random: mute [0, 3]",
+        "ri_edges": "ri_edges: cut [(0, 1), (0, 8)]",
+        "ri_guided": "ri_guided: mute [0, 3]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.375,
+        "oracle": 0.41666666666666663,
+        "random": 0.29166666666666663,
+        "ri_edges": 0.3333333333333333,
+        "ri_guided": 0.375
+      },
+      "regret": {
+        "degree_greedy": 0.08333333333333333,
+        "random": 0.25,
+        "ri_edges": 0.16666666666666669,
+        "ri_guided": 0.08333333333333333
+      },
+      "seed_node": 8,
+      "topology": "scale_free"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.25,
+        "none": 0.25,
+        "oracle": 0.08333333333333333,
+        "random": 0.27777777777777773,
+        "ri_edges": 0.25,
+        "ri_guided": 0.16666666666666666
+      },
+      "case_id": "case-35",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 2,
+      "n": 12,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [1, 2]",
+        "none": "none: no intervention",
+        "oracle": "oracle: mute [0, 3]",
+        "random": "random: mute [2, 4]",
+        "ri_edges": "ri_edges: cut [(3, 7), (3, 9)]",
+        "ri_guided": "ri_guided: mute [1, 3]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "oracle": 0.08333333333333334,
+        "random": -0.013888888888888867,
+        "ri_edges": 0.0,
+        "ri_guided": 0.04166666666666667
+      },
+      "regret": {
+        "degree_greedy": 0.16666666666666669,
+        "random": 0.19444444444444442,
+        "ri_edges": 0.16666666666666669,
+        "ri_guided": 0.08333333333333333
+      },
+      "seed_node": 7,
+      "topology": "scale_free"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.125,
+        "none": 0.25,
+        "random": 0.18055555555555555,
+        "ri_edges": 0.25,
+        "ri_guided": 0.125
+      },
+      "case_id": "case-36",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [2, 3, 5]",
+        "none": "none: no intervention",
+        "random": "random: mute [1, 7, 19]",
+        "ri_edges": "ri_edges: cut [(2, 13), (2, 22), (5, 7)]",
+        "ri_guided": "ri_guided: mute [2, 3, 5]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.041666666666666664,
+        "random": 0.02314814814814815,
+        "ri_edges": 0.0,
+        "ri_guided": 0.041666666666666664
+      },
+      "seed_node": 11,
+      "topology": "scale_free"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.125,
+        "none": 0.375,
+        "random": 0.3333333333333333,
+        "ri_edges": 0.041666666666666664,
+        "ri_guided": 0.16666666666666666
+      },
+      "case_id": "case-37",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [1, 2, 3]",
+        "none": "none: no intervention",
+        "random": "random: mute [2, 12, 14]",
+        "ri_edges": "ri_edges: cut [(0, 7), (0, 22), (4, 22)]",
+        "ri_guided": "ri_guided: mute [0, 1, 3]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.08333333333333333,
+        "random": 0.013888888888888895,
+        "ri_edges": 0.1111111111111111,
+        "ri_guided": 0.06944444444444445
+      },
+      "seed_node": 22,
+      "topology": "scale_free"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.4166666666666667,
+        "none": 0.7083333333333334,
+        "random": 0.23611111111111113,
+        "ri_edges": 0.041666666666666664,
+        "ri_guided": 0.041666666666666664
+      },
+      "case_id": "case-38",
+      "endemic_none": true,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1, 3]",
+        "none": "none: no intervention",
+        "random": "random: mute [2, 4, 23]",
+        "ri_edges": "ri_edges: cut [(1, 7), (7, 9), (9, 11)]",
+        "ri_guided": "ri_guided: mute [1, 3, 4]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.09722222222222222,
+        "random": 0.1574074074074074,
+        "ri_edges": 0.22222222222222224,
+        "ri_guided": 0.22222222222222224
+      },
+      "seed_node": 9,
+      "topology": "scale_free"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.041666666666666664,
+        "none": 0.041666666666666664,
+        "random": 0.041666666666666664,
+        "ri_edges": 0.041666666666666664,
+        "ri_guided": 0.041666666666666664
+      },
+      "case_id": "case-39",
+      "endemic_none": false,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [0, 1, 3]",
+        "none": "none: no intervention",
+        "random": "random: mute [7, 8, 15]",
+        "ri_edges": "ri_edges: cut [(0, 1), (0, 3), (17, 20)]",
+        "ri_guided": "ri_guided: mute [0, 1, 3]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.0,
+        "random": 0.0,
+        "ri_edges": 0.0,
+        "ri_guided": 0.0
+      },
+      "seed_node": 20,
+      "topology": "scale_free"
+    },
+    {
+      "adoption": {
+        "degree_greedy": 0.2916666666666667,
+        "none": 0.625,
+        "random": 0.4444444444444445,
+        "ri_edges": 0.08333333333333333,
+        "ri_guided": 0.08333333333333333
+      },
+      "case_id": "case-40",
+      "endemic_none": true,
+      "endemic_ri_guided": false,
+      "k": 3,
+      "n": 24,
+      "plans": {
+        "degree_greedy": "degree_greedy: mute [1, 2, 5]",
+        "none": "none: no intervention",
+        "random": "random: mute [1, 12, 19]",
+        "ri_edges": "ri_edges: cut [(0, 3), (3, 7), (3, 9)]",
+        "ri_guided": "ri_guided: mute [1, 2, 3]"
+      },
+      "reduction_per_node": {
+        "degree_greedy": 0.1111111111111111,
+        "random": 0.060185185185185175,
+        "ri_edges": 0.18055555555555555,
+        "ri_guided": 0.18055555555555555
+      },
+      "seed_node": 7,
+      "topology": "scale_free"
+    }
+  ]
+}
